@@ -10,17 +10,22 @@ import javax.xml.ws.Endpoint;
 public class VerbruikService {
   @WebMethod
   public String berekenVerbruik(String verkeerType, String kilometers) {
-    int km = Integer.parseInt(kilometers);
-    switch (verkeerType){
-      case "spits":
-        return "Verbruik: "+(0.900 * km)+"KwH";
-      case "normaal":
-        return "Verbruik: "+(0.400 * km)+"KwH";
-      case "snelrijden":
-        return "Verbruik: "+(1.2 * km)+"KwH";
-    }
 
-    return "0";
+    try{
+      int km = Integer.parseInt(kilometers);
+      switch (verkeerType){
+        case "spits":
+          return "Verbruik: "+(0.900 * km)+"KwH";
+        case "normaal":
+          return "Verbruik: "+(0.400 * km)+"KwH";
+        case "snelrijden":
+          return "Verbruik: "+(1.2 * km)+"KwH";
+      }
+
+    } catch (NumberFormatException e){
+      return "Voer en geldig getal in alstublieft.";
+    }
+    return "Voer een geldige verkeerssituatie in alstublieft.";
   }
 
   public static void main(String[] argv) {

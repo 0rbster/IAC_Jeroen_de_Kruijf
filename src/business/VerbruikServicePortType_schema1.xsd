@@ -5,6 +5,7 @@
 
   <xs:element name="berekenVerbruikResponse" type="tns:berekenVerbruikResponse"/>
 
+  <!--Method: berekenVerbruik() request -->
   <xs:complexType name="berekenVerbruik">
     <xs:sequence>
       <xs:element name="arg0" type="xs:string" minOccurs="0"/>
@@ -12,6 +13,7 @@
     </xs:sequence>
   </xs:complexType>
 
+  <!--Method: berekenVerbruik() response -->
   <xs:complexType name="berekenVerbruikResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:string" minOccurs="0"/>
