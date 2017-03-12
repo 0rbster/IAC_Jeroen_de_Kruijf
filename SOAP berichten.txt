@@ -1,0 +1,114 @@
+Request1:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bus="http://business/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bus:berekenVerbruik>
+         <!--Geef type verkeer aan (spits, normaal, snelrijden)-->
+         <arg0>spits</arg0>
+         <!--Geef te rijden kilometers op.-->
+         <arg1></arg1>
+         
+      </bus:berekenVerbruik>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response1:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:berekenVerbruikResponse xmlns:ns2="http://business/">
+         <return>Verbruik: 5.4</return>
+      </ns2:berekenVerbruikResponse>
+   </S:Body>
+</S:Envelope>
+
+Request2:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bus="http://business/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bus:berekenVerbruik>
+         <!--Geef type verkeer aan (spits, normaal, snelrijden)-->
+         <arg0>normaal</arg0>
+         <!--Geef te rijden kilometers op.-->
+         <arg1>8</arg1>
+         
+      </bus:berekenVerbruik>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response2: 
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:berekenVerbruikResponse xmlns:ns2="http://business/">
+         <return>Verbruik: 3.2</return>
+      </ns2:berekenVerbruikResponse>
+   </S:Body>
+</S:Envelope>
+
+Request3:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bus="http://business/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bus:berekenVerbruik>
+         <!--Geef type verkeer aan (spits, normaal, snelrijden)-->
+         <arg0>snelrijden</arg0>
+         <!--Geef te rijden kilometers op.-->
+         <arg1>8</arg1>
+         
+      </bus:berekenVerbruik>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response3:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:berekenVerbruikResponse xmlns:ns2="http://business/">
+         <return>Verbruik: 9.6</return>
+      </ns2:berekenVerbruikResponse>
+   </S:Body>
+</S:Envelope>
+
+Request4:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bus="http://business/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bus:berekenVerbruik>
+         <!--Geef type verkeer aan (spits, normaal, snelrijden)-->
+         <arg0>normaal</arg0>
+         <!--Geef te rijden kilometers op.-->
+         <arg1>200</arg1>
+         
+      </bus:berekenVerbruik>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response4:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:berekenVerbruikResponse xmlns:ns2="http://business/">
+         <return>Verbruik: 80.0</return>
+      </ns2:berekenVerbruikResponse>
+   </S:Body>
+</S:Envelope>
+
+Request5:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bus="http://business/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bus:berekenVerbruik>
+         <!--Geef type verkeer aan (spits, normaal, snelrijden)-->
+         <arg0>spits</arg0>
+         <!--Geef te rijden kilometers op.-->
+         <arg1>200</arg1>
+         
+      </bus:berekenVerbruik>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response5:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:berekenVerbruikResponse xmlns:ns2="http://business/">
+         <return>Verbruik: 180.0</return>
+      </ns2:berekenVerbruikResponse>
+   </S:Body>
+</S:Envelope>

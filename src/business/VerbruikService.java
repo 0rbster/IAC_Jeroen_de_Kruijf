@@ -13,15 +13,16 @@ public class VerbruikService {
     int km = Integer.parseInt(kilometers);
     switch (verkeerType){
       case "spits":
-        return "Verbruik: "+(0.900 * km);
+        return "Verbruik: "+(0.900 * km)+"KwH";
       case "normaal":
-        return "Verbruik: "+(0.400 * km);
+        return "Verbruik: "+(0.400 * km)+"KwH";
       case "snelrijden":
-        return "Verbruik: "+(1.2 * km);
+        return "Verbruik: "+(1.2 * km)+"KwH";
     }
 
     return "0";
   }
+
   public static void main(String[] argv) {
     Object implementor = new VerbruikService();
     String address = "http://localhost:9000/VerbruikService";
